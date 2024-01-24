@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(161, 231, 188);
+    padding: 20px;
+}
+
+h1{
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+table{
+    background-color: white;
+    font-size: 1.6rem;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table thead th{
+    background-color: rgb(47, 0, 255);
+    color: white;
+    padding: 10px;
+}
+
+table tbody td{
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgba(128, 128, 128, 0.288);
+}
+
+.edit,.delete,.addBtn,button{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: red;
+}
+
+p{
+    text-align: end;
+}
+
+.addBtn{
+    font-size: 2rem;   
+}
+
+.form-group{
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.form-group label,.form-group input{
+    display: block;
+    outline: none;
+    font-size: 20px;
+}
+
+.homeBtn{
+    text-align: start;
+}
+
+.homeBtn a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: rgb(3, 144, 238);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.alert{
+    display: block;
+    padding: 10px;
+    background-color: green;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}

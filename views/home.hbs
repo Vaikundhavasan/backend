@@ -1,0 +1,39 @@
+<h1>Sample</h1>
+
+<script>
+  window.setTimeout( function() { window.location.reload(); }, 2000);
+</script>
+
+<p> <a href="/addUser" class="addBtn">Add User</a> </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>MOBILE</th>
+      <th>EDIT</th>
+      <th>DELETE</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+
+      <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.Name}}</td>
+        <td>{{this.Mobile}}</td>
+        <td> <a href="/editUser/{{this.ID}}" class="edit"> Edit</a> </td>
+        <td>
+          <a
+            href="/deleteUser/{{this.ID}}"
+            class="delete"
+            onclick='return confirm("Are You Sure?")'
+          >Delete</a>
+        </td>
+      </tr>
+
+    {{/each}}
+  </tbody>
+</table>
